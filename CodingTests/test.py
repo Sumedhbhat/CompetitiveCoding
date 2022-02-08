@@ -1,3 +1,3 @@
-x=[1,2,3,4]
-if (1 and 2 and 5) in x:
-    print("yes")
+x="Something"
+print(x[:3:1])
+print(x[-3::1])
