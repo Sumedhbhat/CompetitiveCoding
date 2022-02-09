@@ -1,3 +1,5 @@
-x="Something"
-print(x[:3:1])
-print(x[-3::1])
+x="Some"
+index=x.index('e')
+print(index)
+print(x[index:])
+print(len(x))
