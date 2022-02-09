@@ -1,3 +1,11 @@
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem35.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
 /*
  * @lc app=leetcode id=35 lang=cpp
  *
@@ -20,7 +28,7 @@ public:
             else{
                 left=mid+1;
                 ans=mid+1;
-            }
+            } 
         }
         return ans;
     }
