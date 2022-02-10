@@ -31,13 +31,10 @@ string longestPalindrome(string s) {
             }
         }
         for(int i = 2;i<sz;++i){
-            for(int j = 0;j<sz-i;++j)
-            {        
-                if(s[j] == s[i+j] && dp[j+1][j+i-1] == 1)
-                {
+            for(int j = 0;j<sz-i;++j){        
+                if(s[j] == s[i+j] && dp[j+1][j+i-1] == 1){
                     dp[j][i+j] = 1;
-                    if(i > longest)
-                    {
+                    if(i > longest){
                         longest = i;
                         q = i+j;
                         p = j;
