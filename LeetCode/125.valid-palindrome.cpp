@@ -5,7 +5,6 @@
  */
 
 // @lc code=start
-#include <string>
 class Solution {
 public:
     bool isPalindrome(string s) {
