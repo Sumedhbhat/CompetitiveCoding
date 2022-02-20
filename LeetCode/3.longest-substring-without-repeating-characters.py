@@ -5,9 +5,6 @@
 #
 
 # @lc code=start
-from socket import inet_aton
-
-
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         best=0

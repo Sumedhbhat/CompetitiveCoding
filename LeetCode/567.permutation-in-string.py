@@ -7,20 +7,16 @@
 # @lc code=start
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        m,n=len(s2),len(s1)
-        v=["0"]*m;
-        for i in s1:
-            for j in range(m):
-                if s2[j]==i:
-                    v[j]="1"
-        v="".join(v)
-        print(v)
-        print(v[3:3+n]==1*n)
-        print(s1," ",s2)
-        for i in range(m-n):
-            if v[i:i+n]=='1'*n:
+        sub,string=len(s1),len(s2)
+        subans=dict.fromkeys(s1,0)
+        for i in range(sub):
+            subans[s1[i]]+=1
+        for i in range(string-sub+1):
+            ans=dict.fromkeys(s2[i:i+sub],0)
+            for j in range(sub):
+                ans[s2[i+j]]+=1
+            if ans==subans:
                 return True
-            print(v[i:i+n])
 
 
 # @lc code=end
