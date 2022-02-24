@@ -13,11 +13,9 @@ class Solution:
             if s[i] in present:
                 index=present.index(s[i])
                 present=present[index+1:]+s[i]
-                
             else:
                 present+=s[i]
             if best<len(present):
                 best=len(present)
         return best
 # @lc code=end
-

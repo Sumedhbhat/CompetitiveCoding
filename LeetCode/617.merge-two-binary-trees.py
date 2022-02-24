@@ -13,13 +13,12 @@
 #         self.right = right
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
-        # if root1==None and root2==None:
-        #     return None
-        # elif root1==None:
-        #     return root2
-        # elif root2==None:
-        #     return root1
-        # else:
-        #     root1.right
+        return self.jointrees(root1,root2)
+
+    def jointrees(self,root1,root2):
+        newNode=TreeNode()
+        if root1!=None:
+            
+
 # @lc code=end
 
