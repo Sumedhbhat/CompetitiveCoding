@@ -18,8 +18,18 @@ void scanIO(string s)
   freopen((s + ".out").c_str(), "w", stdout);
 }
 
-int solve(int n)
+vector<int> solve(vector<ll> n)
 {
+  int first,second,third;
+  auto m1=min_element(n.begin(),n.end());
+  first=m1;
+  *m1=INT_MAX;
+  auto m1=min_element(n.begin(),n.end());
+  second=m1;
+  *m1=INT_MAX;
+  auto m=max_element(n.begin(),n.end());
+  third=*m-first-second;
+  vector<int> ans={first,second,third};
 }
 
 int main()
@@ -27,7 +37,9 @@ int main()
   // scanIO("");
   // for (cin >> t; t > 0; t--)
   // {
-  int n;
-  cin >> n;
+    vector<ll> input(7);
+    for(int i=0;i<7;i++) cin>>input[i];
+    vector<int> ans=solve(input);
+    for(auto x:ans) cout<<x<<endl;
   // }
 }

@@ -1,33 +1,26 @@
 #include <bits/stdc++.h>
-#define ll long long int;
-#define vec vector<int>;
-#define vecstr vector<string>;
-#define fast_io              \
-  ios_base::sync_with_stdio; \
-  cin.tie(0);                \
-  cout.tie(0);
 using namespace std;
-int t, n;
-int a[10000];
 
-/* Sumedh S Bhat */
+using ll = long long;
 
-void scanIO(string s)
-{
-  freopen((s + ".in").c_str(), "r", stdin);
-  freopen((s + ".out").c_str(), "w", stdout);
+using vi = vector<int>;
+#define pb push_back
+#define all(x) begin(x), end(x)
+#define sz(x) (int)(x).size()
+
+using pi = pair<int, int>;
+#define f first
+#define s second
+#define mp make_pair
+
+void setIO(string name = "") {
+	cin.tie(0)->sync_with_stdio(0);   // see /general/fast-io
+	cout.tie(0)->sync_with_stdio(0);  // see /general/fast-io
+	if (sz(name)) {
+		freopen((name + ".in").c_str(), "r",
+		        stdin);  // see /general/input-output
+		freopen((name + ".out").c_str(), "w", stdout);
+	}
 }
-
-int solve(int n)
-{
-}
-
-int main()
-{
-  // scanIO("");
-  // for (cin >> t; t > 0; t--)
-  // {
-  int n;
-  cin >> n;
-  // }
-}
+// EndCodeSnip
+int main() { setIO(); }
